@@ -1,0 +1,231 @@
+.main-container{
+    width:300px;
+    height:530px;
+    background-color:#000;
+    margin:auto;
+    border-radius:20px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.main-container::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: #f7f7f7;
+    position: absolute;
+    bottom: 15px;
+    left: 25%;
+    border-radius: 40px;
+}
+
+.title{
+    font-family: arial;
+    font-size:20px;
+    display:inline;
+    margin:auto;
+    color:#fff;
+}
+
+
+#input{
+    width:100%;
+    height:60px;
+    text-align:right;
+    font-size:40px;
+    border:none;
+    overflow-x:auto;
+    color: #fff;
+    background-color: transparent;
+}
+#equation{
+    width:100%;
+    height:30px;
+    font-size:20px;
+    text-align:right;
+    border:none;
+    color: #fff;
+    background-color: transparent;
+}
+#input:focus{
+    outline:none;
+}
+#equation:focus{
+    outline:none;
+}
+/*.calculatorGrid{
+    padding:10px;
+    margin:10px 15px 0px 10px;
+    display:none;
+}*/
+.number,.operation,.function{
+    width:60px;
+    height:60px;
+    border-radius:60px;
+    font-size:20px;
+    border:none;
+}
+.operation{
+    background-color:black;
+    color:white;
+}
+.function{
+    background-color:grey;
+}
+i{
+        font-size: 22px;
+    color: #9d9d9d;
+}
+.historybox{    
+    background-color:grey;
+    padding:10px; 
+}
+.header{
+    padding:20px 0px 20px 0px;
+    text-align:center;
+}
+.number:hover{
+    background-color:grey;
+    color:black;
+}
+.answer{
+    width:120px;
+    padding:10px;
+    border-radius:30px;
+    border:none;
+    font-size:30px;
+    background-color:orange;
+}
+.history{
+    visibility:hidden;
+}
+.userinput{
+    margin:0px 12px 0px 12px;
+    width:270px;
+}
+.historybox{
+    width:93%;
+    height:260px;
+    background-color:black;
+    text-align:right;
+    display:none;
+    overflow-y:auto;
+    position:relative;
+    top:5px;
+}
+.historycontent{
+    font-family: arial;
+    color:white;
+    font-size:16px;
+    padding:10px;
+    border-bottom: double #a161fc;
+}
+.del{
+    background-color:transparent;
+    border:none;
+    margin-top:5px;
+    margin-right:10px;
+}
+.main{
+    background-color:transparent;
+    text-align:right;
+    height:380px;
+    display:none;
+}
+
+.calculatorGrid {
+  padding: 13px 22px;
+  display:  none;
+}
+
+.calculatorGrid > input {
+    width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  outline: none;
+  color: #fff;
+  background-color: #000;
+  padding: 5px;
+  transition: 0.1s;
+  font-weight: 400;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.calculatorGrid > button {
+     width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  outline: none;
+  color: #fff;
+  background-color: #000;
+  padding: 5px;
+  transition: 0.1s;
+  font-weight: 400;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.delete-btn-cls {
+  margin: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
+  color: #fff;
+  background-color: #f44336;
+  padding: 5px 10px;
+  transition: 0.1s;
+  font-weight: 400;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+
+.calculatorGrid > input:hover {
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.4);
+  z-index: 20;
+  transform: translateY(-3px);
+}
+
+.btn-caluculator {
+  color: #9d9d9d !important;
+}
+
+.calculatorGrid > input.option {
+  background-color: #9f9f9f;
+  color: #000;
+}
+
+.calculatorGrid > button.option {
+  background-color: #9f9f9f;
+  color: #000;
+}
+.span-two {
+    width: 112px !important;
+    background: linear-gradient(to right, #966bd3, #762fdb) !important;
+    color: #fff !important;
+}
+#style-3::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar
+{
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar-thumb
+{
+    background-color: #000000;
+}
